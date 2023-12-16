@@ -1,0 +1,19 @@
+<h1>Homework Timezone App-Angular</h1>
+
+<div id="app-contianer">
+
+<!--az első komponens-->
+  <app-time 
+    [timezone]="'valassz'"
+    [isCurrent]="selectedTimezone==='timezone.label'"
+    (changeTimezone)="handleTimezoneChange($event)"
+  />
+
+<!--a második komponens-->
+  <app-time 
+    [timezone]="'valassz'"
+    [isCurrent]="selectedTimezone==='timezone.label'"
+    (changeTimezone)="handleTimezoneChange($event)"
+  />
+    
+</div>

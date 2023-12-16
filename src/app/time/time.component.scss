@@ -1,0 +1,45 @@
+body{
+    width: fit-content;
+    background-color: aliceblue;
+    box-shadow: 0px 3px 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    p{
+        text-align: center;
+        select{
+            margin: auto;           
+            text-align: center;
+            width: 80% !important;
+        }
+    }
+}
+
+#buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+    button{
+        margin: 10px;
+    }
+}
+
+.budapestClass{
+    background-image: url('/assets/zászló.jpeg');
+    background-size: cover;
+    color: white;
+}
+
+.americaClass {
+    background-image: url('/assets/amerika.jpeg');
+    background-size: cover;
+    color: white;
+}
+.dubaiClass {
+    background-image: url('/assets/dubai.jpeg');
+    background-size: cover;
+    color: white;
+}
+.vostokClass {
+    background-image: url('/assets/vostok.jpeg');
+    background-size: cover;
+}

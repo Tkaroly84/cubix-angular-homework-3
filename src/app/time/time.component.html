@@ -1,0 +1,21 @@
+<body [ngClass]="{'budapestClass': isBudapestTimezone, 'americaClass': isAmericaTimezone, 'dubaiClass':isDubaiTimezone, 'vostokClass':isVostokTimezone}">
+    
+    <p>Jelenlegi időzóna:</p>
+    <p>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="timezone">
+            <option *ngFor="let timezone of timezones" [value]="timezone.value">{{timezone.label}}</option>
+        </select>
+    </p>
+    <p [ngStyle]="{'color': textColor}">{{time}}</p>
+
+    <div id="buttons-container">
+        <button 
+            (click)="update()"
+             type="button" class="btn btn-primary">Frissítés</button>
+        <button 
+            (click)="timeZoneSelectorClick()"
+            [disabled]="isCurrent"
+             type="button" class="btn btn-secondary">Jelenleginek jelöl</button>
+    </div>
+
+</body>
