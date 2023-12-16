@@ -67,6 +67,5 @@ export class TimeComponent {
 
   timeZoneSelectorClick(){
     this.changeTimezone.emit(this.timezone)//kiközvetítjük a szülő felé, hogy a másik button-nal jelölés történt
-    this.isBudapestTimezone = this.timezone === 'Europe/Budapest';
   }
 }
